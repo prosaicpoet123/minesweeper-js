@@ -14,9 +14,9 @@ For anyone unfamiliar with the rules of Minesweeper.
 
 ## TODOs
 
-[] add timer
-[] add and track number of mines remaining
-[] add custom difficulty options
-[] when losing the game, only the currently selected mine should have a red background
-[] when losing the game, any incorrect flags should be crossed out
-[] add dark mode
+[ ] add timer
+[ ] add and track number of mines remaining
+[ ] add custom difficulty options
+[ ] when losing the game, only the currently selected mine should have a red background
+[ ] when losing the game, any incorrect flags should be crossed out
+[ ] add dark mode
