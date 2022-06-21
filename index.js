@@ -1,12 +1,3 @@
-// add timer
-// add number of mines remaining
-// add reset button
-// add option to switch between difficulties
-// add custom map option
-// when losing the game only the currently clicked mine should have a red background
-// when losing the game, any incorrect flags should be crossed out
-// add dark mode
-
 class Minesweeper {
   constructor(rows, cols, mines) {
     this.colors = {
