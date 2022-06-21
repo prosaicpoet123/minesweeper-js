@@ -1,5 +1,9 @@
 # Minesweeper
 
+
+![2022-06-21 11-52-29 2022-06-21 11_53_28](https://user-images.githubusercontent.com/17533102/174783383-422e7014-3c50-4aa7-bf9c-abbea1a66f47.gif)
+
+
 ## What is this?
 
 I got bored the other day and fancied a new project. I realised I hadn't played minesweeper in a long time and unfortunately it doesn't come with the newer versions of windows. So I had a go at creating my own. I intentionally limited myself to HTML, CSS and vanilla JS so as to really dive into the logic and leverage the native JS APIs.
