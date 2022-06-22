@@ -282,14 +282,21 @@ class Minesweeper {
   // refactor this to use the checkAdjacentCells function below
   // need to figure out how to pass through a reference to "this" correctly
   revealAdjacentCells = function(row, col) {
-    for (var i = -1; i < 2; i++) {
-      for (var j = -1; j < 2; j ++) {
-        var cell = document.getElementById((row + i) + '-' + (col + j));
+    // for (var i = -1; i < 2; i++) {
+    //   for (var j = -1; j < 2; j ++) {
+        // var cell = document.getElementById((row + i) + '-' + (col + j));
+        // if (!!cell && !cell.clicked && !cell.flagged && !cell.unknown) {
+        //   this.handleClick(cell, row + i, col + j);
+        // }
+    //   }
+    // }
+
+    this.checkAdjacentCells(row, col, function(adjRow, adjCol) {
+      var cell = document.getElementById(adjRow + '-' + adjCol);
         if (!!cell && !cell.clicked && !cell.flagged && !cell.unknown) {
-          this.handleClick(cell, row + i, col + j);
+          this.handleClick(cell, adjRow, adjCol);
         }
-      }
-    }
+    })
   }
 
   getAdjacentMines = function (row, col) {
@@ -308,7 +315,7 @@ class Minesweeper {
   checkAdjacentCells = function (row, col, cb) {
     for (var i = -1; i < 2; i++) {
       for (var j = -1; j < 2; j ++) {
-        cb(row + i, col + j)
+        cb.call(this, row + i, col + j)
       }
     }
   }
